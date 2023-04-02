@@ -33,8 +33,19 @@ const Carousel: FC<props> = ({autoRotate}: props) => {
             peripheralImageRadius: 50,
             centralImageRadius: 100
         }
+    } if(window.innerWidth < 600) {
+        radiusConfig = {
+            carouselRadius: 180,
+            peripheralImageRadius: 40,
+            centralImageRadius: 80
+        }
+    } if(window.innerWidth < 500) {
+        radiusConfig = {
+            carouselRadius: 150,
+            peripheralImageRadius: 30,
+            centralImageRadius: 70
+        }
     }
-
     const [focusElement, setFocusElement] = useState(0)
     const [gap, setGap] = useState()
 
@@ -74,7 +85,7 @@ const Carousel: FC<props> = ({autoRotate}: props) => {
   return (
     <div className="carousel-section">
         <FancyCarousel carouselRadius={radiusConfig.carouselRadius} peripheralImageRadius={radiusConfig.peripheralImageRadius} centralImageRadius={radiusConfig.centralImageRadius} setFocusElement={setFocusElement} autoRotateTime={(autoRotate?3:0)}/>
-        <div className="info-box">
+        <div className="info-box" style={(autoRotate)?{}:{marginTop: '-4rem', marginLeft: '-4.5rem'}}>
         <h1 className="heading">{items[focusElement].name}</h1>
         <p className="description">{items[focusElement].descp}</p>
         </div>

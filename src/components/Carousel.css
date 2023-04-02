@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8rem;
+    gap: 12rem;
     margin: 5rem 0;
   }
   
@@ -54,7 +54,7 @@
 
   @media only screen and (max-width: 1200px) {
     .carousel-section {
-      gap: 2rem;
+      gap: 6rem;
     }
     .info-box {
       width: 400px;
@@ -64,5 +64,37 @@
     }
     .description {
       font-size: 0.8rem;
+    }
+  }
+  @media only screen and (max-width: 1100px) {
+    .info-box {
+      width: 350px;
+      height: 275px;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .info-box {
+      width: 350px;
+      height: 275px;
+    }
+
+    .carousel-section {
+      flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .info-box {
+      width: 325px;
+      height: 300px;
+    }
+
+    .carousel-section {
+      flex-direction: column;
+    }
+
+    .heading {
+      font-size: 1.5rem;
     }
   }

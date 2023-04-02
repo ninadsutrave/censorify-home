@@ -12,7 +12,9 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <div className="wrapper-element">
       <Carousel autoRotate={autoRotate}/>
+      </div>
       <Buttons autoRotate={autoRotate} setAutoRotate={setAutoRotate}/>
       <Footer />
     </div>
