@@ -1,0 +1,29 @@
+  .carousel-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    margin: 5rem 0;
+  }
+  
+  .info-box {
+    background: #CB786Ca6;
+    width: 600px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    box-shadow: 5px 10px 18px #888888;
+    padding: 2rem;
+  }
+  
+  .heading, .description {
+    background-color: transparent;
+  }
+  
+  .heading {
+    text-shadow: 2px 2px 2px #CB786C;
+  }

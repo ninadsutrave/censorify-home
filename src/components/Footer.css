@@ -1,0 +1,20 @@
+.Footer {
+    width: 100%;
+    background-color: #CB786C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Footer p {
+    background-color: #CB786C;
+    color: white;
+}
+
+.Footer p a {
+    background-color: #CB786C;
+    color: white;
+    text-decoration: underline;
+}

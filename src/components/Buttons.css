@@ -1,0 +1,34 @@
+.buttons-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3rem 0;
+}
+
+.buttons-wrapper button {
+    padding: 1rem 1.5rem;
+    background-color: #CB786C;
+    color: white;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttons-wrapper a {
+    text-decoration: none;
+}
+
+.buttons-wrapper button img {
+    width: 20px;
+}
+
+#auto-rotate-btn {
+    border: 3px solid #62332b;
+}
