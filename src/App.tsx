@@ -7,7 +7,7 @@ import './App.css'
 
 function App() {
 
-  const [autoRotate, setAutoRotate] = useState(false)
+  const [autoRotate, setAutoRotate] = useState(true)
 
   return (
     <div className="App">

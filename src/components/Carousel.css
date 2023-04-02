@@ -27,3 +27,42 @@
   .heading {
     text-shadow: 2px 2px 2px #CB786C;
   }
+
+  @media only screen and (max-width: 1500px) {
+    .info-box {
+      width: 500px;
+    }
+    .heading {
+      font-size: 1.75rem;
+    }
+    .description {
+      font-size: 0.85rem;
+    }
+  }
+
+  @media only screen and (max-width: 1400px) {
+    .info-box {
+      width: 450px;
+    }
+    .heading {
+      font-size: 1.75rem;
+    }
+    .description {
+      font-size: 0.85rem;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .carousel-section {
+      gap: 2rem;
+    }
+    .info-box {
+      width: 400px;
+    }
+    .heading {
+      font-size: 1.5rem;
+    }
+    .description {
+      font-size: 0.8rem;
+    }
+  }

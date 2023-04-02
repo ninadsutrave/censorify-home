@@ -9,11 +9,34 @@ interface props {
 
 const Carousel: FC<props> = ({autoRotate}: props) => {
 
-    useEffect(() => {
+    var radiusConfig = {
+        carouselRadius: 275,
+        peripheralImageRadius: 60,
+        centralImageRadius: 125
+    }
 
-    }, [])
+    if(window.innerWidth >= 1500) {
+        radiusConfig = {
+            carouselRadius: 275,
+            peripheralImageRadius: 60,
+            centralImageRadius: 125
+        }
+    } if(window.innerWidth < 1500) {
+        radiusConfig = {
+            carouselRadius: 250,
+            peripheralImageRadius: 60,
+            centralImageRadius: 110
+        }
+    } if(window.innerWidth < 1300) {
+        radiusConfig = {
+            carouselRadius: 220,
+            peripheralImageRadius: 50,
+            centralImageRadius: 100
+        }
+    }
 
     const [focusElement, setFocusElement] = useState(0)
+    const [gap, setGap] = useState()
 
     //const images = [image1, image2, image3, image4, image5, image6, image7]
   
@@ -50,7 +73,7 @@ const Carousel: FC<props> = ({autoRotate}: props) => {
 
   return (
     <div className="carousel-section">
-        <FancyCarousel carouselRadius={250} peripheralImageRadius={60} centralImageRadius={100} setFocusElement={setFocusElement} autoRotateTime={(autoRotate?2:0)}/>
+        <FancyCarousel carouselRadius={radiusConfig.carouselRadius} peripheralImageRadius={radiusConfig.peripheralImageRadius} centralImageRadius={radiusConfig.centralImageRadius} setFocusElement={setFocusElement} autoRotateTime={(autoRotate?3:0)}/>
         <div className="info-box">
         <h1 className="heading">{items[focusElement].name}</h1>
         <p className="description">{items[focusElement].descp}</p>

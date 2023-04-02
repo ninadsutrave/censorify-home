@@ -10,7 +10,7 @@ interface props {
 const Buttons: FC<props> = ({autoRotate, setAutoRotate}: props) => {
 
     const [buttonStyles, setButtonStyles] = useState({})
-    const [margin, setMargin] = useState({marginTop: '0'})
+    const [margin, setMargin] = useState({marginTop: '4rem'})
 
     const toggleAutoRotate = () => {
         if(autoRotate) {
