@@ -3,6 +3,15 @@ import FancyCarousel from 'react-fancy-circular-carousel'
 import 'react-fancy-circular-carousel/FancyCarousel.css'
 import './Carousel.css'
 
+// importing images
+import image1 from '../assets/greatwall.jpg'
+import image2 from '../assets/chichenitza.jpg'
+import image3 from '../assets/petza.jpg'
+import image4 from '../assets/machpichu.jpg'
+import image5 from '../assets/christ.jpg'
+import image6 from '../assets/colosseum.jpg'
+import image7 from '../assets/tajmahal.jpg'
+
 interface props {
     autoRotate: boolean
 }
@@ -82,9 +91,11 @@ const Carousel: FC<props> = ({autoRotate}: props) => {
         }
     ]
 
+    const images = [image1, image2, image3, image4, image5, image6, image7]
+
   return (
     <div className="carousel-section">
-        <FancyCarousel carouselRadius={radiusConfig.carouselRadius} peripheralImageRadius={radiusConfig.peripheralImageRadius} centralImageRadius={radiusConfig.centralImageRadius} setFocusElement={setFocusElement} autoRotateTime={(autoRotate?3:0)}/>
+        <FancyCarousel images={images} carouselRadius={radiusConfig.carouselRadius} peripheralImageRadius={radiusConfig.peripheralImageRadius} centralImageRadius={radiusConfig.centralImageRadius} setFocusElement={setFocusElement} autoRotateTime={(autoRotate?3:0)}/>
         <div className="info-box" style={(autoRotate)?{}:{marginTop: '-4rem', marginLeft: '-4.5rem'}}>
         <h1 className="heading">{items[focusElement].name}</h1>
         <p className="description">{items[focusElement].descp}</p>
