@@ -23,7 +23,7 @@ const Content: FC = () => {
         <div className="buttons-wrapper">
           <Button browserName="CHROME" icon={ChromeIcon} extensionUrl="https://ninadsutrave.in"/>
           <Button browserName="FIREFOX" icon={FirefoxIcon} extensionUrl="https://ninadsutrave.in"/>
-          <Button browserName="CHROME" icon={SafariIcon} extensionUrl="https://ninadsutrave.in"/>
+          <Button browserName="SAFARI" icon={SafariIcon} extensionUrl="https://ninadsutrave.in"/>
         </div>
         <img className="preview" src={DefaultPreview} />
         <img className="preview" src={FunnyPreview} />

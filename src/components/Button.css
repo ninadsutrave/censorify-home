@@ -14,6 +14,7 @@
     justify-content: center;
     gap: 1.5rem;
     color: #EFEFEF;
+    width: 205px;
 }
 
 .extension-button:hover {
@@ -22,11 +23,4 @@
 
 .extension-button img {
     width: 20px;
-}
-
-@media only screen and (max-width: 600px) {
-    .buttons-wrapper {
-        flex-direction: column;
-        gap: 2rem;
-    }
 }

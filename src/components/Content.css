@@ -21,6 +21,7 @@
 
 .tagline {
     margin: 1.5rem 0;
+    text-align: center;
 }
 
 .buttons-wrapper {
@@ -60,7 +61,7 @@
         font-size: 1.8rem;
     }
     .content-wrapper-element ul {
-        width: 50%;
+        width: 70%;
     }
 }
 
@@ -69,6 +70,9 @@
         width: 85%;
     }
     .content-heading {
-        width: 70%;
+        width: 80%;
+    }
+    .tagline {
+        width: 60%;
     }
 }
