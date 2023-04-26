@@ -1,3 +1,9 @@
+.anchor-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .extension-button {
     background-color: #008394;
     border-radius: 4px;

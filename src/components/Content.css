@@ -16,7 +16,7 @@
 
 .preview {
     width: 40%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px 0px;
 }
 
 .tagline {
@@ -40,6 +40,21 @@
 .bold {
     font-weight: bold;
 }
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+  }
+  
+  ul li:before {
+    content: '✓';
+    margin-right: 10px;
+  }
 
 @media only screen and (max-width: 1400px) {
     .preview {
