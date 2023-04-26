@@ -1,0 +1,32 @@
+.extension-button {
+    background-color: #008394;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px 0px;
+    margin: 0.5rem 0;
+    outline: none;
+    border: none;
+    padding: 1rem 1.5rem;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    color: #EFEFEF;
+}
+
+.extension-button:hover {
+    background-color: #1aaec1;
+}
+
+.extension-button img {
+    width: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .buttons-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

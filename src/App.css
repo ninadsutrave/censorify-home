@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+:root {
+  --brown: #7A4F24;
+  --md-brown: #9b5e20;
+  --light-brown: #ce955c;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   word-break: break-word;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--md-brown);
 }
 
 .App {
@@ -14,4 +21,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-image: 
+  linear-gradient(transparent 11px, rgba(255, 255, 255, 0.8) 12px, transparent 12px),
+  linear-gradient(90deg, transparent 11px, rgba(238, 238, 228, 0.8) 12px, transparent 12px);
+  background-size: 100% 12px, 12px 100%;
+}
+
+a {
+  text-decoration: none;
 }

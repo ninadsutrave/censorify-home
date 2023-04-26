@@ -1,6 +1,6 @@
 .Header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: #CB786C;
     min-height: 10vh;

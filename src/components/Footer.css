@@ -1,20 +1,21 @@
 .Footer {
     width: 100%;
-    background-color: #CB786C;
+    background-color: var(--light-brown);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    padding: 1rem 0;
 }
 
 .Footer p {
-    background-color: #CB786C;
+    background-color: var(--light-brown);
     color: white;
 }
 
 .Footer p a {
-    background-color: #CB786C;
+    background-color: var(--light-brown);
     color: white;
     text-decoration: underline;
 }
