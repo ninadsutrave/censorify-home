@@ -6,6 +6,7 @@ import FunnyPreview from '../assets/funny-preview.png'
 import ChromeIcon from '../assets/chrome.png'
 import FirefoxIcon from '../assets/firefox.png'
 import BraveIcon from '../assets/brave.png'
+import EdgeIcon from '../assets/edge.png'
 
 import './Content.css'
 
@@ -17,13 +18,18 @@ const Content: FC = () => {
             <li>Censors <span className="bold">English swear words</span> on your webpage</li>
             <li>Choose a custom placeholder <span className="hint">(use <span className="bold">emojis</span> to make it more fun)</span></li>
             <li>Choose to replace swear words by <span className="bold">funny words</span> instead!</li>
-            <li>Available on the popular browsers Chrome, Firefox and Brave</li>
+            <li>Available on the popular browsers Chrome, Firefox, Brave and Edge</li>
         </ul>
         <p className="tagline bold">Drop a review and star the <a className="repo" href="https://github.com/ninadsutrave/censorify" target="_blank" rel="noreferrer noopener">Github Repo</a>! ⭐</p>
         <div className="buttons-wrapper">
-          <Button browserName="CHROME" icon={ChromeIcon} extensionUrl="https://ninadsutrave.in"/>
-          <Button browserName="FIREFOX" icon={FirefoxIcon} extensionUrl="https://ninadsutrave.in"/>
-          <Button browserName="BRAVE" icon={BraveIcon} extensionUrl="https://ninadsutrave.in"/>
+          <div className="flex">
+            <Button browserName="CHROME" icon={ChromeIcon} extensionUrl="https://ninadsutrave.in"/>
+            <Button browserName="FIREFOX" icon={FirefoxIcon} extensionUrl="https://addons.mozilla.org/en-US/firefox/addon/censorify/"/>
+          </div>
+          <div className="flex">
+            <Button browserName="BRAVE" icon={BraveIcon} extensionUrl="https://ninadsutrave.in"/>
+            <Button browserName="EDGE" icon={EdgeIcon} extensionUrl="https://ninadsutrave.in"/>
+          </div>
         </div>
         <img className="preview" src={DefaultPreview} />
         <img className="preview" src={FunnyPreview} />

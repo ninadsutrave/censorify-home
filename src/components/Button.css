@@ -30,3 +30,13 @@
 .extension-button img {
     width: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    .flex {
+        flex-direction: column;
+        gap: 0;
+    }
+    .extension-button {
+        font-size: 0.75rem;
+    }
+}

@@ -10,7 +10,7 @@ interface props {
 const Buttons: FC<props> = ({browserName, icon, extensionUrl}: props) => {
 
   return (
-    <a className="anchor-wrapper" href={extensionUrl} target="_blank">
+    <a className="anchor-wrapper" href={extensionUrl} target="_blank" rel="noreferrer noopener">
       <button className="extension-button">
               <img src={icon} />
               ADD TO {browserName}
