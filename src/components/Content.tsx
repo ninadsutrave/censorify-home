@@ -23,11 +23,11 @@ const Content: FC = () => {
         <p className="tagline bold">Drop a review and star the <a className="repo" href="https://github.com/ninadsutrave/censorify" target="_blank" rel="noreferrer noopener">Github Repo</a>! ⭐</p>
         <div className="buttons-wrapper">
           <div className="flex">
-            <Button browserName="CHROME" icon={ChromeIcon} extensionUrl="https://ninadsutrave.in"/>
+            <Button browserName="CHROME" icon={ChromeIcon} extensionUrl="https://chrome.google.com/webstore/detail/censorify/efchgkadcglilfcdbgpolinhieeabjlc?hl=en&authuser=0"/>
             <Button browserName="FIREFOX" icon={FirefoxIcon} extensionUrl="https://addons.mozilla.org/en-US/firefox/addon/censorify/"/>
           </div>
           <div className="flex">
-            <Button browserName="BRAVE" icon={BraveIcon} extensionUrl="https://ninadsutrave.in"/>
+            <Button browserName="BRAVE" icon={BraveIcon} extensionUrl="https://chrome.google.com/webstore/detail/censorify/efchgkadcglilfcdbgpolinhieeabjlc?hl=en&authuser=0"/>
             <Button browserName="EDGE" icon={EdgeIcon} extensionUrl="https://ninadsutrave.in"/>
           </div>
         </div>
