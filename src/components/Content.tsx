@@ -28,7 +28,7 @@ const Content: FC = () => {
           </div>
           <div className="flex">
             <Button browserName="BRAVE" icon={BraveIcon} extensionUrl="https://chrome.google.com/webstore/detail/censorify/efchgkadcglilfcdbgpolinhieeabjlc?hl=en&authuser=0"/>
-            <Button browserName="EDGE" icon={EdgeIcon} extensionUrl="https://ninadsutrave.in"/>
+            <Button browserName="EDGE" icon={EdgeIcon} extensionUrl="https://microsoftedge.microsoft.com/addons/detail/censorify/fpjmpnneglldlohfngljdfkhjclliaeb"/>
           </div>
         </div>
         <img className="preview" src={DefaultPreview} />
